@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about-index.html">About</a>
+  
+        
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link active" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+    
+
+ <form class="form-inline d-none d-md-block">
+   <div class="input-group">
+     <label class="sr-only" for="search">Search</label>
+   <input class="form-control" type="text" id="search" placeholder="Search">
+    <div class="input-group=append">
+     <button class="btn btn-outline-dark" type="button">Go</button>
+    </div>
+  </div>
+</form>
+
+  </div><!-- container -->
+ </nav>
+
+
+ <style>
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>'
+  }
+  </style>
+ 
+
+    <nav class="breadcrumb" style="margin-top:75px">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+    <span class="breadcrumb-item active">Contact</span>
+    </nav>
+
+    <div class="container">
+<div class="container border my-4 p-3 shadow">
+  <h1>Contact us</h1>
+  <p>In order to make an appointment please fill out the form below</p>
+</div>
+      
+      <h2>Contact Form</h2>
+      
+      <form>
+      
+        <fieldset class="form-group">
+          <legend>Owner Info</legend>
+      
+          <div class="form-group">
+            <label for="ownername">Owner name</label>
+            <input class="form-control" type="text" id="ownername" placeholder="Your name">
+          </div> <!--Form Group-->
+      
+          <div class="form-group">
+            <label for="owneremail">Email address</label>
+            <input class="form-control" type="email" id="owneremail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small class="form-text text-muted" id="emailHelp">We'll never share your email to any third parties</small>
+          </div> <!--Form Group-->
+
+          <div class="form-group">
+            <label for="ownerphone">Phone number</label>
+            <input class="form-control" type="number" id="ownerphone" aria-describedby="phoneHelp" placeholder="Enter phone">
+            <small class="form-text text-muted" id="phoneHelp">We'll never share your phone number as well</small>
+          </div> <!--Form Group-->
+      
+        </fieldset>
+        <fieldset class="form-group">
+      
+          <legend>Pet Info</legend>
+      
+          <div class="form-group">
+            <label class="form-control-label" for="petname">Pet name</label>
+            <input class="form-control" type="text" id="petname" placeholder="Your Pet's name">
+          </div> <!--Form Group-->
+
+          <div class="form-group">
+            <label class="form-control-label" for="petage">Pet age</label>
+            <input class="form-control" type="text" id="petage" placeholder="Your Pet's age">
+          </div> <!--Form Group-->
+      
+          <div class="form-group">
+            <label class="form-control-label" for="pettype">Pet type</label>
+            <select class="custom-select" id="pettype">
+              <option>Choose</option>
+              <option value="cat">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="bird">Other</option>
+            </select>
+          </div> <!--Form Group-->
+      
+          <div class="form-group">
+            <label class="form-control-label" for="reasonforvisit">Reason for your appointment</label>
+            <textarea class="form-control" id="reasonforvisit" rows="3"></textarea>
+          </div> <!--Form Group-->
+      
+        </fieldset> <!-- Field Set-->
+
+        <fieldset class="form-group">
+
+          <legend>Pet Medical Data</legend>
+      
+          <div class="form-group">
+            <label class="d-block">Has your pet been spayed or neutered?</label>
+      
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="spayneut-yes" name="spayneut" value="yes" checked>
+              <label class="custom-control-label" for="spayneut-yes" >Yes</label>
+            </div><!-- form-check -->
+      
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="spayneut-no" name="spayneut" value="no">
+              <label class="custom-control-label" for="spayneut-no" >No</label>
+            </div><!-- form-check -->
+      
+          </div><!-- form-group -->
+      
+          <div class="form-group">
+            <label class="mb-4">Has the pet had any of the following in the past 30 days</label>
+      
+            <div class="form-group">
+               <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="ill-abdominal"> 
+                <label class="custom-control-label mb-2" for="ill-abdominal">Abdominal pain</label>
+               </div>
+               <label for="painlevel">If yes, specify the level of pain</label>
+               <input type="range" class="custom-range" min="0" max="10"> 
+            </div><!-- form-check -->
+      
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" id="ill-appetite"> 
+              <label class="custom-control-label" for="ill-appetite">Lack of appetite</label>
+            </div><!-- form-check -->
+      
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" id="ill-weakness">
+              <label class="custom-control-label" for="ill-weakness">Weakness</label>
+            </div><!-- form-check -->
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" id="ill-vomiting"> 
+              <label class="custom-control-label" for="ill-vomiting">Vomiting</label>
+            </div><!-- form-check -->
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" id="ill-coughing"> 
+              <label class="custom-control-label" for="ill-coughing">Coughing</label>
+            </div><!-- form-check -->
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" id="ill-sneezing"> 
+              <label class="custom-control-label" for="ill-sneezing">Sneezing</label>
+            </div><!-- form-check -->
+          </div><!-- form-group -->
+        </fieldset><!-- form-group -->
+
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="petphoto">
+            <label class="custom-file-label" for="petphoto">Upload Photo</label>
+          </div>
+
+        </div>
+        
+        <div class="form-group">
+          <label class="form-input">May we share your pet's photos/story on our website for educational purposes?</label>
+          <div class="custom-control custom-switch">
+           <input class="custom-control-input" type="checkbox" id="consent"> 
+           <label class="custom-control-label" for="consent">Yes</label>
+          </div>
+        </div><!-- form-check -->
+        <button class="btn btn-primary mb-3" type="submit">Submit</button>
+      </form>
+      
+      
+      </div><!-- content container -->
+
+  
+    
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about-index.html">About</a>
+  
+        
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+    
+
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <label class="sr-only" for="search">Search</label>
+      <input class="form-control" type="text" id="search" placeholder="Search">
+       <div class="input-group=append">
+        <button class="btn btn-outline-dark" type="button">Go</button>
+       </div>
+     </div>
+   </form>
+
+  </div><!-- container -->
+ </nav>
+
+ 
+
+ <style>
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>'
+  }
+  </style>
+ 
+ <nav class="breadcrumb" style="margin-top: 75px;">
+  <a class="breadcrumb-item" href="index.html">Home</a>
+  <a class="breadcrumb-item" href="#">Services</a>
+  <span class="breadcrumb-item active">Boarding</span>
+  </nav>
+
+  <style>
+    .boarding {
+      max-height: 400px;
+    }
+  </style>
+<div class="container">
+  <header class="jumbotron">
+   
+     <div class="container">
+      <div class="display-2">Boarding</div>
+       <div class="d-md-flex">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed enim. Vestibulum sed arcu non odio euismod lacinia at. Ultricies integer quis auctor elit sed vulputate mi. Pellentesque sit amet porttitor eget dolor morbi non arcu. Bibendum at varius vel pharetra vel turpis nunc eget. Vulputate mi sit amet mauris commodo quis. Sapien eget mi proin sed. Ac turpis egestas sed tempus urna et. Leo vel fringilla est ullamcorper.A diam maecenas sed enim ut. Odio euismod lacinia at quis risus sed vulputate odio ut. Condimentum vitae sapien pellentesque habitant. Nulla facilisi morbi tempus iaculis. Semper viverra nam libero justo laoreet sit amet. Tincidunt ornare massa eget egestas purus viverra accumsan. Nunc sed augue lacus viverra vitae congue eu consequat. Adipiscing bibendum est ultricies integer quis auctor elit sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra et ultrices neque ornare aenean euismod elementum nisi.</p>
+        <img class="boarding img-fluid mx-3" src="images/walking.jpg" alt="Walking with a dog"> 
+      </div>
+  </header>
+     <img class=" img-fluid my-3" src="images/boarding.jpg" alt="A dog in a cage"> 
+   
+
+     <nav class="mt-5" aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="grooming-index.html"><</a></li>
+        <li class="page-item"><a class="page-link" href="surgery-index.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="grooming-index.html">4</a></li>
+        <li class="page-item active"><a class="page-link" href="boarding-index.html">5</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">></a></li>
+      </ul>
+    </nav>
+
+   </div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

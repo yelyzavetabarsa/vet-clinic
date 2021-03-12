@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="about-index.html">About</a>
+  
+        
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+    
+
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <label class="sr-only" for="search">Search</label>
+      <input class="form-control" type="text" id="search" placeholder="Search">
+       <div class="input-group=append">
+        <button class="btn btn-outline-dark" type="button">Go</button>
+       </div>
+     </div>
+   </form>
+
+  </div><!-- container -->
+ </nav>
+
+ 
+
+ <style>
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>'
+  }
+  .doctors-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  </style>
+ 
+ <nav class="breadcrumb" style="margin-top: 75px;">
+  <a class="breadcrumb-item" href="index.html">Home</a>
+  <span class="breadcrumb-item active">About</span>
+  </nav>
+  <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+  data-delay="5000" style="position: absolute; top: 1rem; right: 1rem;">
+  <div class="toast-header">
+    <strong class="mr-auto">About Wisdom Pet Medicine</strong>
+    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Sit amet cursus sit amet. Convallis posuere morbi leo urna molestie. Magna fringilla urna porttitor rhoncus dolor.
+  </div>
+</div>
+
+
+<div class="container " style="margin-top: 80px;">
+
+  <div class="content" id="mission">
+    <h2>Our Mission</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas. Lorem donec massa sapien faucibus et molestie ac feugiat. Ut tristique et egestas quis ipsum suspendisse. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Tempor id eu nisl nunc mi ipsum faucibus vitae. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Aliquam sem et tortor consequat id. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Sit amet tellus cras adipiscing enim. Sed viverra tellus in hac habitasse platea dictumst. Tempor orci eu lobortis elementum nibh tellus molestie. Mauris ultrices eros in cursus turpis massa tincidunt dui. Dolor sed viverra ipsum nunc aliquet. Elit ut aliquam purus sit amet luctus venenatis. Eget est lorem ipsum dolor sit amet consectetur. Eget sit amet tellus cras adipiscing enim. Ultrices gravida dictum fusce ut placerat orci. Vel turpis nunc eget lorem dolor sed viverra.</p>
+    <button id="showToast" class="btn btn-primary mx-auto my-3">
+      
+    <span id="mySpinner" class="d-none">
+      <span class="spinner-border spinner-grow-sm text-light"
+        role="status" aria-hidden="true"></span>
+      <span class="sr-only">Loading...</span>
+    </span>
+    About</button>
+   </div> <!--button-->
+</div><!-- content container -->
+
+
+    <div class="container">
+  <h2>We offer</h2>
+  <ul class="list-group list-group-horizontal-xl mb-3">
+    <li class="list-group-item list-group-item-action">Affordable prices</li>
+    <li class="list-group-item list-group-item-action">Gentle care</li>
+    <li class="list-group-item list-group-item-action">Professional staff</li>
+    <li class="list-group-item list-group-item-action">24/7 availability</li>
+    <li class="list-group-item list-group-item-action">Convenient location</li>
+  </ul>
+  </div>
+
+  <div class="container border my-4 p-3 shadow"><h2>What will you get</h2>
+    <p>Dignissim enim sit amet venenatis urna cursus eget. Vitae et leo duis ut diam quam nulla porttitor. Habitant morbi tristique senectus et netus et. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Nibh praesent tristique magna sit amet purus gravida quis. Eget arcu dictum varius duis. Malesuada proin libero nunc consequat interdum varius sit. Enim nec dui nunc mattis. Bibendum ut tristique et egestas quis. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Aliquam purus sit amet luctus venenatis lectus magna. Nisl suscipit adipiscing bibendum est ultricies integer. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Nibh ipsum consequat nisl vel pretium lectus quam.</p>
+    
+    <button type="button" class="btn btn-info"
+    data-toggle="popover"
+    data-placement="top"
+    data-trigger="hover"
+    title="Standard Checkups"
+    data-content="The standard checkups offer Ultrasounds, X-rays and pest control.">
+      Checkup Info
+    </button>
+  </div>
+
+  <div class="container">
+      <h2>Our Team</h2>
+
+<div class="card-deck">
+      <section class="card mb-5 border-warning" id="drguzman">
+        <img class="card-img-top img-fluid" src="images/guzman.jpg" alt="Dr. Guzman Photo">
+        <div class="card-body">
+          <h2 class="card-title">Dr. Ali Guzman</h2>
+          <h5 class="card-subtitle">Nutritionist</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Justo nec ultrices dui sapien. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Mattis pellentesque id nibh tortor id aliquet lectus. Aliquet lectus proin nibh nisl condimentum id. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam malesuada bibendum arcu vitae elementum curabitur. Suscipit adipiscing bibendum est ultricies. At volutpat diam ut venenatis tellus. Mi proin sed libero enim sed faucibus turpis in. Lectus vestibulum mattis ullamcorper velit.</p>
+          <div class="list-group list-group-flush">
+          <a class="list-group-item" href="#">About Me</a>
+          <a class="list-group-item" href="#">My Pets</a>
+          <a class="list-group-item" href="#">Client Slideshow</a>
+        </div>
+        </div>
+      </section>
+
+    <section class="card mb-5 border-warning" id="drlloyd">
+      <img class="card-img-top img-fluid" src="images/lloyd.jpg" alt="Doctor Lloyd Photo">
+      <div class="card-body">
+          <h2 class="card-title">Dr. Hamish Lloyd</h2>
+          <h5 class="card-subtitle">Behaviorist</h5>
+          <p class="card-text">Non enim praesent elementum facilisis leo vel fringilla. Tortor consequat id porta nibh venenatis cras sed felis. Vel turpis nunc eget lorem. Pellentesque habitant morbi tristique senectus. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Ut porttitor leo a diam sollicitudin. Sagittis vitae et leo duis ut diam quam nulla. Magna eget est lorem ipsum. Nunc pulvinar sapien et ligula. Sapien pellentesque habitant morbi tristique. Ante in nibh mauris cursus mattis molestie. Purus in mollis nunc sed id semper risus in. Vitae tortor condimentum lacinia quis vel eros donec. Sodales ut eu sem integer vitae justo. Tempus imperdiet nulla malesuada pellentesque elit. </p>
+          <div class="list-group list-group-flush">
+          <a class="list-group-item" href="#">About Me</a>
+          <a class="list-group-item" href="#">My Pets</a>
+          <a class="list-group-item" href="#">Client Slideshow</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mb-5 border-warning" id="drgiles">
+      <img class="card-img-top img-fluid" src="images/giles.jpg" alt="Doctor Giles Photo">
+      <div class="card-body">
+        <h2 class="card-title">Dr. Reef Giles</h2>
+        <h5 class="card-subtitle">Preventive Care</h5>
+        <p class="card-text">Semper quis lectus nulla at volutpat diam. Egestas pretium aenean pharetra magna ac placerat. Massa eget egestas purus viverra accumsan in nisl. Tempus imperdiet nulla malesuada pellentesque elit. Maecenas pharetra convallis posuere morbi leo. Enim praesent elementum facilisis leo vel. Morbi tristique senectus et netus et malesuada fames ac turpis. Amet risus nullam eget felis eget nunc. Accumsan in nisl nisi scelerisque eu ultrices vitae. Id nibh tortor id aliquet lectus. Amet massa vitae tortor condimentum lacinia quis. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Bibendum arcu vitae elementum curabitur vitae nunc.</p>
+        <div class="list-group list-group-flush">
+        <a class="list-group-item" href="#">About Me</a>
+        <a class="list-group-item" href="#">My Pets</a>
+        <a class="list-group-item" href="#">Client Slideshow</a>
+      </div>
+    </div>
+    </section>
+  </div> <!-- card layout-->
+  
+  </div><!-- content container -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+  $(function () {
+  $('[data-toggle="popover"]').popover ();
+  })
+
+  $(document).ready(function() {
+  $("#showToast").click(function() {
+    $('.toast').toast('show');
+
+    $('#myToast').on('shown.bs.toast', function() {
+      $('#mySpinner').removeClass('d-none');
+    });
+
+    $('#myToast').on('hidden.bs.toast', function() {
+      $('#mySpinner').addClass('d-none');
+    });
+
+  })
+});
+</script>
+</body>
+</html>

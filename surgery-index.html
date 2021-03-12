@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about-index.html">About</a>
+  
+        
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+    
+
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <label class="sr-only" for="search">Search</label>
+      <input class="form-control" type="text" id="search" placeholder="Search">
+       <div class="input-group=append">
+        <button class="btn btn-outline-dark" type="button">Go</button>
+       </div>
+     </div>
+   </form>
+
+  </div><!-- container -->
+ </nav>
+
+ <style>
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>'
+  }
+  </style>
+ 
+ <nav class="breadcrumb" style="margin-top: 75px;">
+  <a class="breadcrumb-item" href="index.html">Home</a>
+  <a class="breadcrumb-item" href="#">Services</a>
+  <span class="breadcrumb-item active">Surgerical services</span>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <section class="col-12">
+
+        <div class="display-2">Surgical Services</div>
+        <button class="btn btn-primary mb-3" 
+        data-toggle="collapse" 
+        data-target="#surgery" aria-expanded="Link to surgical services">
+       Learn more
+        </button>
+        <div id="surgery" class="collapse mb-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna sit amet purus gravida. Quis auctor elit sed vulputate. Leo a diam sollicitudin tempor id eu nisl nunc. Consectetur adipiscing elit pellentesque habitant. Erat imperdiet sed euismod nisi porta. Nisl vel pretium lectus quam id. Phasellus egestas tellus rutrum tellus pellentesque eu. Arcu felis bibendum ut tristique et egestas quis. Nisi vitae suscipit tellus mauris. Non odio euismod lacinia at quis risus.
+        </div>
+
+   <div class="accordion" id="servicesaccordion">
+
+  <div class="card">
+    <div class="card-header" id="spayneutheading">
+      <h5 class="mb-0">
+        <a href="#spayneut"
+          data-toggle="collapse"
+          aria-expanded="true"
+          aria-controls="spayneut"
+        >Spay and neuter</a>
+      </h5>
+    </div><!-- card header -->
+    <div id="spayneut"
+      class="collapse show"
+      data-parent="#servicesaccordion"
+      aria-labelledby="spayneutheading"
+      >
+      <div class="card-body">
+        <p>Arcu odio ut sem nulla pharetra diam. Nunc aliquet bibendum enim facilisis gravida. In arcu cursus euismod quis viverra nibh cras pulvinar. Etiam sit amet nisl purus in mollis nunc. Aliquet nec ullamcorper sit amet. Ultrices neque ornare aenean euismod elementum. Vel facilisis volutpat est velit egestas dui. Pulvinar sapien et ligula ullamcorper malesuada proin. Neque gravida in fermentum et. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Facilisis magna etiam tempor orci. Iaculis eu non diam phasellus vestibulum lorem. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Penatibus et magnis dis parturient montes nascetur ridiculus. Vitae nunc sed velit dignissim sodales ut. Justo donec enim diam vulputate. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.</p>
+      </div>
+    </div><!-- collapse -->
+  </div><!-- card --> 
+  
+  <div class="card">
+    <div class="card-header" id="clawheading">
+      <h5 class="mb-0">
+        <a href="#claw"
+          data-toggle="collapse"
+          aria-expanded="true"
+          aria-controls="claw"
+        >Canine dew-claw removal</a>
+      </h5>
+    </div><!-- card header -->
+    <div id="claw"
+      class="collapse show"
+      data-parent="#servicesaccordion"
+      aria-labelledby="clawheading"
+      >
+      <div class="card-body">
+        <p>Scelerisque purus semper eget duis at tellus at. Donec massa sapien faucibus et molestie ac feugiat. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Viverra vitae congue eu consequat. Nunc sed augue lacus viverra vitae congue eu consequat. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Suspendisse sed nisi lacus sed viverra tellus in. Pellentesque dignissim enim sit amet venenatis urna. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Volutpat sed cras ornare arcu dui vivamus arcu. Vivamus at augue eget arcu dictum varius duis.</p>
+      </div>
+    </div><!-- collapse -->
+  </div><!-- card --> 
+   
+  <div class="card">
+    <div class="card-header" id="woundheading">
+      <h5 class="mb-0">
+        <a href="#wound"
+          data-toggle="collapse"
+          aria-expanded="true"
+          aria-controls="wound"
+        >Laceration & wound repair</a>
+      </h5>
+    </div><!-- card header -->
+    <div id="wound"
+      class="collapse show"
+      data-parent="#servicesaccordion"
+      aria-labelledby="woundheading"
+      >
+      <div class="card-body">
+        <p>Tristique senectus et netus et. Ipsum a arcu cursus vitae. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Et magnis dis parturient montes nascetur ridiculus mus. Nulla pellentesque dignissim enim sit. Eu scelerisque felis imperdiet proin. Commodo nulla facilisi nullam vehicula ipsum a. Nunc sed blandit libero volutpat sed cras ornare. Aenean et tortor at risus viverra adipiscing at in. Nulla pellentesque dignissim enim sit amet venenatis urna. Felis eget velit aliquet sagittis. Dictum varius duis at consectetur. Purus in massa tempor nec. Mollis nunc sed id semper risus in. Tincidunt arcu non sodales neque sodales ut etiam sit amet. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Purus faucibus ornare suspendisse sed nisi lacus sed. Cras sed felis eget velit aliquet sagittis.</p>
+      </div>
+    </div><!-- collapse -->
+  </div><!-- card --> 
+    
+    <img class="img-fluid my-3" src="images/surgery.jpg" alt="A vet preparing for operation"> 
+  </div>
+
+      </section>
+    </div><!-- row -->
+
+    <nav class="mt-5" aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="vaccination-index.html"><</a></li>
+        <li class="page-item"><a class="page-link" href="vaccination-index.html">2</a></li>
+        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="grooming-index.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="grooming-index.html">></a></li>
+      </ul>
+    </nav>
+
+
+  </div><!-- content container -->
+
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about-index.html">About</a>
+  
+        
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+    
+
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <label class="sr-only" for="search">Search</label>
+      <input class="form-control" type="text" id="search" placeholder="Search">
+       <div class="input-group=append">
+        <button class="btn btn-outline-dark" type="button">Go</button>
+       </div>
+     </div>
+   </form>
+
+  </div><!-- container -->
+ </nav>
+
+ 
+
+ <style>
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>'
+  }
+  </style>
+ 
+ <nav class="breadcrumb" style="margin-top: 75px;">
+  <a class="breadcrumb-item" href="index.html">Home</a>
+  <a class="breadcrumb-item" href="#">Services</a>
+  <span class="breadcrumb-item active">Grooming</span>
+  </nav>
+
+  <style>
+    .grooming-img {
+      max-height: 500px;
+      max-width: 500px;
+    }
+  </style>
+
+  <div class="container">
+    <div class="display-2">Grooming</div>
+    <div class="row justify-content-between">
+
+
+       <section class="col-sm-12 col-md-6 col-lg-4">
+       <img class="grooming-img" src="images/grooming-cat.jpg" alt="Cat grooming">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer eget. Tristique senectus et netus et malesuada fames ac turpis. Id nibh tortor id aliquet lectus proin nibh nisl. Risus ultricies tristique nulla aliquet enim tortor. Hac habitasse platea dictumst quisque sagittis. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Sed euismod nisi porta lorem mollis aliquam. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. </p>
+        </section>
+
+    <section class="col-sm-12 col-md-6 col-lg-4">
+      <img class="grooming-img" src="images/grooming-dog.jpg" alt="Dog grooming">
+      <p>Felis imperdiet proin fermentum leo. Lacinia at quis risus sed vulputate odio ut. Tincidunt nunc pulvinar sapien et ligula. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Sed arcu non odio euismod. Tellus in metus vulputate eu scelerisque felis. Purus semper eget duis at tellus at urna condimentum mattis. Venenatis a condimentum vitae sapien. Massa ultricies mi quis hendrerit dolor. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Venenatis lectus magna fringilla urna. Cras semper auctor neque vitae tempus quam pellentesque nec. </p>
+    </section>
+
+    <section class="col-sm-12 col-md-6 col-lg-4">
+      <img class="grooming-img" src="images/grooming-cat-2.jpg" alt="Cat grooming">
+      <p>Cras adipiscing enim eu turpis egestas. Congue eu consequat ac felis donec. Vestibulum morbi blandit cursus risus. Scelerisque fermentum dui faucibus in ornare quam. Suspendisse potenti nullam ac tortor vitae. Ornare aenean euismod elementum nisi. Ornare lectus sit amet est placerat in egestas. Sed nisi lacus sed viverra tellus in hac habitasse platea. Tempus imperdiet nulla malesuada pellentesque elit. Viverra mauris in aliquam sem fringilla. Libero justo laoreet sit amet cursus sit amet. Eleifend donec pretium vulputate sapien nec. Justo donec enim diam vulputate ut pharetra. Augue eget arcu dictum varius.</p>
+    </section>
+    </div>
+
+    <nav class="mt-5" aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="surgery-index.html"><</a></li>
+        <li class="page-item"><a class="page-link" href="surgery-index.html">3</a></li>
+        <li class="page-item active"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="boarding-index.html">5</a></li>
+        <li class="page-item"><a class="page-link" href="boarding-index.html">></a></li>
+      </ul>
+    </nav>
+
+     </div>
+
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

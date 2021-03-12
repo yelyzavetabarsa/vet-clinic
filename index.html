@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Vet clinic</title>
+</head>
+
+<body>
+
+<nav id="navbar-site" class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+      <img src="images/logo.svg" style="width: 40px;" alt="Veterenary clinic Logo">
+    </a>
+   
+   <button class="navbar-toggler" type="button"
+   data-toggle="collapse" data-target="#myTogglerNav"
+   aria-controls="myTogglerNav"
+   aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon">
+   </button>
+
+   <a href="index.html" class="navbar-brand">Vet clinic</a>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="about-index.html">About</a>
+  
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle="dropdown" id="servicesDropdown"
+            aria-haspopup="true" aria-expanded="false"
+            href="#">Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+                <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+                <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+                <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+                <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+            </div>
+        </div> <!-- dropdown Services -->
+  
+        <a class="nav-item nav-link" href="prices-index.html">Prices</a>
+        <a class="nav-item nav-link" href="contact-index.html">Contact</a>
+      </div> <!-- navbar-nav -->
+    </div> <!-- collapse -->
+
+    <form class="form-inline d-none d-md-block">
+      <div class="input-group">
+        <label class="sr-only" for="search">Search</label>
+      <input class="form-control" type="text" id="search" placeholder="Search">
+       <div class="input-group=append">
+        <button class="btn btn-outline-dark" type="button">Go</button>
+       </div>
+     </div>
+   </form>
+
+  </div><!-- container -->
+</nav>
+
+<style>
+  .services-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+</style>
+
+<header class="jumbotron">
+  <div class="container">
+      <div class="display-2">Welcome to Vet Clinic</div>
+      <p>Our Vet Clinic combines traditional and alternative 
+        <a href="#" data-toggle="tooltip" data-placement="bottom"
+          title="Exams, ultrasounds and more.">medicine</a> 
+          in the diagnosis and treatment of such animals as dogs, cats, birds, fish, and many other. </p>    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Turpis egestas sed tempus urna et pharetra. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Cras adipiscing enim eu turpis. Aenean et tortor at risus viverra adipiscing. Habitant morbi tristique senectus et netus et malesuada fames ac. Duis convallis convallis tellus id. Tristique nulla aliquet enim tortor at. </p>
+   
+    </div>
+</header>
+
+  <div class="container" id="services">
+
+    <div class="btn-group mb-4">
+      <button type="button" class="btn  btn-info">Services</button>
+      <button class="btn btn-info dropdown-toggle dropdown-toggle-split" 
+      type="button" id="dropdownMenuButton"
+      data-toggle="dropdown" 
+      aria-haspopup="true" 
+      aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-header">Service Options</div>
+        <a class="dropdown-item" href="consultation-index.html">Consultation</a>
+        <a class="dropdown-item" href="vaccination-index.html">Vaccinations</a>
+        <a class="dropdown-item" href="surgery-index.html">Surgical services</a>
+        <a class="dropdown-item" href="grooming-index.html">Grooming</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="boarding-index.html">Boarding</a>
+      </div>
+    </div>
+
+
+      
+    
+    <div class="carousel slide carousel-fade" id="featured" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#featured" data-slide-to="0"></li>
+        <li data-target="#featured" data-slide-to="1"></li>
+        <li data-target="#featured" data-slide-to="2"></li>
+        <li data-target="#featured" data-slide-to="3"></li>
+        <li data-target="#featured" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/cat.jpg" alt="Cat Photo">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/fish.jpg" alt="Fish Photo">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Parker</h3>
+            <p>"Purus non enim praesent elementum facilisis leo vel fringilla est. Magna eget est lorem ipsum dolor sit amet."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/dog.jpg" alt="Dog Photo">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/rabbit.jpg" alt="Rabbit Photo">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Lily</h3>
+            <p>"Risus at ultrices mi tempus imperdiet. Facilisi morbi tempus iaculis urna id. Sed adipiscing diam donec adipiscing."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/parrot.jpg" alt="Parrot Photo">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#featured"
+        role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"
+          aria-hidden="true">
+          <span class="sr-only">Previous</span>
+        </span>
+      </a>
+      <a class="carousel-control-next" href="#featured"
+        role="button" data-slide="next">
+        <span class="carousel-control-next-icon"
+          aria-hidden="true">
+          <span class="sr-only">Next</span>
+        </span>
+      </a>
+    </div>
+    <div class="container">
+
+    <div class="container mt-4">
+      <div class="btn-toolbar" aria-label="Pets we assist with">
+      <h2>Pets we can help you with</h2>
+      <div class="row-2" style="width: 90vw;" >
+      <section class="col-sm-6 col-md-3 col-lg-2">
+      <h3>Regular</h3>
+      <div class="btn-group  btn-group mb-2 mx-2" aria-label="Regular Pets">
+       <button type="button" class="btn btn-success mr-2">Cats</button>
+       <button type="button" class="btn btn-success mr-2">Dogs</button>
+       <button type="button" class="btn btn-success mr-2">Fish</button>
+       <button type="button" class="btn btn-success mr-2">Birds</button>
+       <button type="button" class="btn btn-success mr-2">Hamsters</button>
+      </div>
+      </section>
+   
+      <section class="col-sm-6 col-md-3 col-lg-2">
+       <h3>Exotic</h3>
+       <div class="btn-group btn-group mb-2 mx-2" aria-label="Exotic Pets">
+       <button type="button" class="btn btn-warning mr-2">Turtles</button>
+       <button type="button" class="btn btn-warning mr-2">Pigs</button>
+       <button type="button" class="btn btn-warning mr-2">Rabbits</button>
+       <button type="button" class="btn btn-warning mr-2">Reptile</button>
+       <button type="button" class="btn btn-warning mr-2">Ants</button>
+      </section>
+      </div>
+     </div>
+     
+     </div>
+
+    <h2 class="mt-3">The awesome services we provide:</h2>
+    <div class="row bg-light justify-content-around ">
+     
+      <section class="col-sm-12 col-md-6 col-lg-4">
+        <img class="services-img" src="images/nutrition.jpg" alt="Nutrition image">
+          <h3>Consultation on nutrition</h3>
+          <p>Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sit amet facilisis magna etiam tempor. Sed libero enim sed faucibus turpis in eu. Id diam maecenas ultricies mi eget. Vitae aliquet nec ullamcorper sit amet. Cras semper auctor neque vitae. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Sed augue lacus viverra vitae congue eu consequat ac. Metus aliquam eleifend mi in.</p>
+       </section>
+
+      <section class="col-sm-12 col-md-6 col-lg-4">
+        <img class="services-img" src="images/vaccine.jpg" alt="Nutrition image">
+        <h3>Wellness and Vaccination</h3>
+      <p>Nunc faucibus a pellentesque sit amet. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Egestas integer eget aliquet nibh. Lorem sed risus ultricies tristique nulla aliquet enim. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Rhoncus urna neque viverra justo. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Vivamus at augue eget arcu dictum varius.</p>
+      </section>
+
+      <section class="col-sm-12 col-md-6 col-lg-4">
+        <img class="services-img" src="images/health.jpg" alt="Nutrition image">
+        <h3>General Health</h3>
+         <p>Ipsum a arcu cursus vitae congue. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sit amet justo donec enim diam vulputate ut pharetra sit. Ut morbi tincidunt augue interdum velit. Ipsum consequat nisl vel pretium lectus quam id. Netus et malesuada fames ac.</p>
+      </section>
+
+      <section class="col-sm-12 col-md-6 col-lg-4">
+      <img class="services-img" src="images/medical.jpg" alt="Nutrition image">
+      <h3>Medical Services</h3>
+      <p>Habitant morbi tristique senectus et netus et malesuada fames ac. Eu feugiat pretium nibh ipsum consequat nisl vel. Velit euismod in pellentesque massa placerat duis. Tristique senectus et netus et malesuada fames. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Tristique senectus et netus et malesuada fames ac turpis. Nulla facilisi morbi tempus iaculis urna id volutpat.</p>
+      </section>
+
+      <section class="col-sm-12 col-md-6 col-lg-4">
+        <img class="services-img" src="images/grooming.jpg" alt="Nutrition image">
+        <h3>Grooming<span class="badge badge-info badge-pill ml-2">new</span></h3>
+        <p>Sed ullamcorper morbi tincidunt ornare massa eget egestas. Tellus in hac habitasse platea dictumst vestibulum. Risus at ultrices mi tempus imperdiet. Pellentesque massa placerat duis ultricies lacus. Purus semper eget duis at tellus at urna. Euismod in pellentesque massa placerat. Orci a scelerisque purus semper eget duis at. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.</p>
+        </section>
+
+      <section class="col-sm-12 col-md-6 col-lg-4">
+      <img class="services-img" src="images/petsitting.jpg" alt="Nutrition image">
+      <h3>Petsitting and Boarding</h3>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-value-now="65%" aria-value-min="0"  aria-value-max="100%" style="width:65%"></div>
+      </div>
+      <h5>In development</h5>
+      <a href="boarding-index.html" class="btn btn-primary stretched-link">More Info</a>
+     </section>
+
+     
+    </div>
+ </div><!-- container -->
+
+ 
+
+
+ 
+</div><!-- content container -->
+
+<div class="container mt-4">
+
+  <h2>Help Another Pet</h2>
+  
+  <form>
+  
+      <fieldset class="form-group">
+        <legend>Your Info</legend>
+    
+        <div class="form-group">
+          <label class="form-control-label" for="name">Name</label>
+          <input class="form-control" type="text" id="name" placeholder="Your Name">
+        </div><!-- form-group -->
+    
+        <div class="form-group">
+          <label class="form-control-label" for="owneremail">Email</label>
+          <input class="form-control" type="text" id="owneremail" placeholder="Address">
+        </div><!-- form-group -->
+    
+        <div class="form-group">
+          <label class="form-control-label" for="donationamt">Donation Amount</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" id="confirm-donation" checked aria-label="Checkbox for confirming donation">
+                  </div>
+                  <div class="input-group-text">$</div>
+              </div>
+            <input type="text" class="form-control" id="donationamt" placeholder="Amount">
+            <div class="input-group-append">
+              <div class="input-group-text">.00</div>
+            </div>
+          </div>
+        </div><!-- form-group -->
+    
+        <button class="btn btn-primary" type="submit">Submit</button>
+    
+      </fieldset><!-- fieldset -->
+    </form>
+    
+  
+  
+  </div><!-- content container -->
+
+ <script src="js/jquery.slim.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+ <script>
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+ </script>
+
+</body>
+</html>
